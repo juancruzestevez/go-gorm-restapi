@@ -27,7 +27,7 @@ func CreateTaskHandler(w http.ResponseWriter, r *http.Request) {
     var task models.Task
     json.NewDecoder(r.Body).Decode(&task)
     
-    task.UserID = userID // Asumiendo que Task tiene UserID
+    task.UserID = userID
 
     if err := db.DB.Create(&task).Error; err != nil {
         w.WriteHeader(http.StatusBadGateway)

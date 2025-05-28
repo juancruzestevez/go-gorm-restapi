@@ -1,0 +1,32 @@
+# Archivos binarios
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Archivos temporales y del sistema
+*.log
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
+
+# Archivos de Go
+/bin/
+/vendor/
+*.mod
+*.sum
+
+# Archivos personales
+.env
+.idea/
+.vscode/
+
+# Archivos de dependencias de Go (opcional si usás go mod tidy bien)
+go.sum
+
+# Air build binary (por defecto "tmp", puede cambiar según tu config)
+tmp/
